@@ -54,42 +54,10 @@ const social: Social = [
   },
 ];
 
-const home: Home = {
-  path: "/",
-  image: "/images/og/home.jpg",
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between software and design</>,
-  featured: {
-    display: false,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
-  subline: (
-    <>
-      I'm Evren, a software engineer at{" "}
-      <Text as="span" size="xl" weight="strong">
-        ONCE UI
-      </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my
-      own projects.
-    </>
-  ),
-};
-
 const about: About = {
   path: "/",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -427,4 +395,4 @@ const about: About = {
   },
 };
 
-export { person, social, newsletter, home, about };
+export { person, social, newsletter, about };
